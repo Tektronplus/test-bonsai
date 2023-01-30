@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 :root {
   --one-color: #00b289;
   --two-color: #f8db62;
+  --background-color: #f3fbff;
   --black-color: #4c4d5f;
   --white-color: #ffffff;
 
@@ -87,6 +87,10 @@ main {
   grid-area: main;
   padding-left: 150px;
   padding-right: 150px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
 }
 
 #plans-section {
@@ -217,13 +221,73 @@ main {
   display: flex;
   align-items: flex-start;
 }
-.price-addon-card {
+#free-addon-card {
   grid-area: price;
 
   font-size: x-large;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container-price-addon-card {
+  grid-area: price;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-price-addon-card > p {
+  font-family: var(--font-family);
+  color: var(--black-color);
+
+  text-align: center;
+  margin: 0;
+}
+
+.price-addon-card {
+  font-size: xx-large;
+  font-weight: 500;
+
+  text-align: center;
+}
+.price-time-addon-card {
+  font-size: small;
+  font-weight: 300;
+}
+
+/* -- Call to action -- */
+
+#cta-section {
+  background-color: var(--background-color);
+  padding: 50px 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cta-section > p {
+  color: var(--black-color);
+  font-size: xx-large;
+}
+
+#cta-section > p > span {
+  color: var(--one-color);
+}
+
+#cta-section > button {
+  background-color: var(--one-color);
+  padding: 15px 30px;
+
+  border: 2px solid var(--one-color);
+  border-radius: 2px;
+
+  color: var(--white-color);
+  font-family: var(--font-family);
+  font-weight: 500;
 }
 /* ----- FOOTER  ----- */
 
