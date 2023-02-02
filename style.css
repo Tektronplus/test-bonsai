@@ -4,7 +4,7 @@
   --two-color: #f8db62;
   --background-color: #f3fbff;
   --black-color: #4c4d5f;
-  --white-color: #ffffff;
+  --white-color: #fffffff0;
 
   --font-family: "Roboto", sans-serif;
 }
@@ -95,6 +95,7 @@ main {
   gap: 75px;
 }
 
+/* -- Plan Section -- */
 #plans-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -103,6 +104,76 @@ main {
     "header-plan"
     "cards-plan";
 }
+
+/* -- Toggle -- */
+
+#container-toggle-header{
+  width: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#container-toggle-header > span{
+  font-family: var(--font-family);
+}
+
+#tag-month-toggle{
+  color: var(--black-color);
+}
+
+#tag-year-toggle {
+  color: #e8e2e2;
+}
+
+input[type="checkbox"] {
+  display: none;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background: var(--one-color);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--black-color);
+}
+
+input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+input:checked + #tag-month-toggle{
+  color: #eb0f0f;
+}
+
+label:active:after {
+  width: 26px;
+}
 #header-plans-section {
   grid-area: header-plan;
 
@@ -110,6 +181,12 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+#title-header-plan {
+  font-family: var(--font-family);
+  color: var(--black-color);
+  font-size: x-large;
 }
 
 /* -- Plan Card -- */
@@ -375,7 +452,7 @@ footer {
   font-weight: 500;
 }
 
-.highlight-title{
+.highlight-title {
   color: var(--one-color);
   font-size: small;
   font-weight: 400;

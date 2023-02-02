@@ -27,8 +27,14 @@
       <!-- --- PLANS SECTION --- -->
       <div id="plans-section">
         <div id="header-plans-section">
-          <p>Plans & Pricing</p>
-          <p>[toggle]</p>
+          <p id="title-header-plan">Plans & Pricing</p>
+          <div id="container-toggle-header">
+            <span id="tag-month-toggle">MONTHLY</span>
+            <input type="checkbox" id="switch" onchange="toggleFunction()"/><label for="switch"
+            >Toggle</label
+            >
+            <span id="tag-year-toggle">YEARLY</span>
+          </div>
         </div>
         <div id="cards-plans-section">
           <div class="card-plan">
@@ -165,32 +171,32 @@
 
       <div id="footer-col-2">
         <div>
-        <p class="title-list-footer">FREE RESOURCES</p>
-        <ul class="list-footer">
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-        </ul>
+          <p class="title-list-footer">FREE RESOURCES</p>
+          <ul class="list-footer">
+            <li><a href="#">Link #01</a></li>
+            <li><a href="#">Link #01</a></li>
+            <li><a href="#">Link #01</a></li>
+            <li><a href="#">Link #01</a></li>
+          </ul>
 
-        <ul class="list-footer">
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-        </ul>
+          <ul class="list-footer">
+            <li><a href="#">Link #01</a></li>
+            <li><a href="#">Link #01</a></li>
+            <li><a href="#">Link #01</a></li>
+          </ul>
 
-        <p class="title-list-footer">Templates</p>
-        <ul class="list-footer">
-          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-        </ul>
-      </div>
+          <p class="title-list-footer">Templates</p>
+          <ul class="list-footer">
+            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+            <li><a href="#">Link #01</a></li>
+            <li><a href="#">Link #01</a></li>
+          </ul>
+        </div>
       </div>
       <div id="footer-col-3">
         <p class="title-list-footer">BONSAI</p>
@@ -215,8 +221,8 @@
       </div>
     </footer>
   </body>
+  <script src="myscript.js"></script>
 </html>
-
 
 <!-- -- Overlay Padding -- -->
 <!-- -- switch -- -->
