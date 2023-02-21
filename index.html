@@ -1,209 +1,183 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <title>Bonsai</title>
-  </head>
-  <body>
-    <header>
-      <div id="logo-navbar">
-        <img src="/logo.png" />
-      </div>
-      <div id="links-navbar" class="layout-navbar">
-        <a href="#">Product <i class="lni lni-arrow-down"></i></a>
-        <a href="#">Templates <i class="lni lni-arrow-down"></i></a>
-        <a href="#">Pricing</a>
-        <a href="#">Reviews</a>
-      </div>
-      <div id="buttons-navbar" class="layout-navbar">
-        <button id="login-button-navbar">LOG IN</button>
-        <button id="startfree-button-navbar">START FREE</button>
-      </div>
-    </header>
-    <main>
-      <!-- --- PLANS SECTION --- -->
-      <div id="plans-section">
-        <div id="header-plans-section">
-          <p id="title-header-plan">Plans & Pricing</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <title>Bonsai</title>
+</head>
+
+<body>
+  <div id="big-square-background"></div>
+  <header>
+    <div id="logo-navbar">
+      <img src="/logo.png" />
+    </div>
+    <div id="links-navbar" class="layout-navbar">
+      <a href="#">Product <i class="lni lni-arrow-down"></i></a>
+      <a href="#">Templates <i class="lni lni-arrow-down"></i></a>
+      <a href="#">Pricing</a>
+      <a href="#">Reviews</a>
+    </div>
+    <div id="buttons-navbar" class="layout-navbar">
+      <button id="login-button-navbar">LOG IN</button>
+      <button id="startfree-button-navbar">START FREE</button>
+    </div>
+  </header>
+  <main>
+    <!-- --- PLANS SECTION --- -->
+    <div id="plans-section">
+      <div id="header-plans-section">
+        <p id="title-header-plan">Plans & Pricing</p>
+        <div id="main-contianer-toogle">
+          <span>2 MONTHS FREE!</span>
+          <i class="lni lni-headphone"></i>
           <div id="container-toggle-header">
             <span id="tag-month-toggle">MONTHLY</span>
-            <input type="checkbox" id="switch" onchange="toggleFunction()"/><label for="switch"
-            >Toggle</label
-            >
+            <input type="checkbox" id="switch" onchange="toggleFunction()" /><label for="switch">Toggle</label>
             <span id="tag-year-toggle">YEARLY</span>
           </div>
         </div>
-        <div id="cards-plans-section">
-          <div class="card-plan">
-            <p class="title-card-plan">Workflow</p>
-            <p class="price-card-plan"><span>$19</span> /MONTH</p>
-            <hr />
-            <ul>
-              <li>Unlimited Clients & Projects</li>
-              <li>Proposals</li>
-              <li>Contracts</li>
-              <li>Invoicing & Payments</li>
-              <li>Client CRM</li>
-              <li>Projects Management</li>
-              <li>Task & Time Tracking</li>
-              <li>IOS, Android, Chrome & Mac Apps</li>
-            </ul>
-            <button>START FREE</button>
-          </div>
-          <div id="popular-card-plan" class="card-plan">
-            <div id="popular-banner">MOST POPULAR</div>
-            <p class="title-card-plan">Workflow</p>
-            <p class="price-card-plan"><span>$19</span> /MONTH</p>
-            <hr />
-            <ul>
-              <li>Unlimited Clients & Projects</li>
-              <li>Proposals</li>
-              <li>Contracts</li>
-              <li>Invoicing & Payments</li>
-              <li>Client CRM</li>
-              <li>Projects Management</li>
-              <li>Task & Time Tracking</li>
-              <li>IOS, Android, Chrome & Mac Apps</li>
-            </ul>
-            <button>START FREE</button>
-          </div>
-        </div>
       </div>
-
-      <!-- --- ADD-ONS SECTION --- -->
-      <div id="addons-section">
-        <div id="addons-title-section">
-          <p>Super charge your work with add-ons</p>
-        </div>
-
-        <div id="addons-cards-section">
-          <div class="addon-card">
-            <p class="subtitle-addon-card">Collaborators</p>
-            <p class="description-addod-card">
-              Invite other users to specific projects for limited access and
-              functionality
-            </p>
-            <p id="free-addon-card">Free</p>
-          </div>
-
-          <div class="addon-card">
-            <p class="subtitle-addon-card">Collaborators</p>
-            <p class="description-addod-card">
-              Invite other users to specific projects for limited access and
-              functionality
-            </p>
-            <div class="container-price-addon-card">
-              <p class="price-addon-card">$9</p>
-              <p class="price-time-addon-card">/MONTH</p>
-            </div>
-          </div>
-
-          <div class="addon-card">
-            <p class="subtitle-addon-card">Collaborators</p>
-            <p class="description-addod-card">
-              Invite other users to specific projects for limited access and
-              functionality
-            </p>
-            <div class="container-price-addon-card">
-              <p class="price-addon-card">$10</p>
-              <p class="price-time-addon-card">/MONTH</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- --- CALL-TO-ACTION SECTION --- -->
-      <div id="cta-section">
-        <p>
-          It's <span>your</span> business. <br />
-          We're here to help it grow.
-        </p>
-        <button>START FREE</button>
-      </div>
-
-      <!-- --- QUESTION SECTION --- -->
-      <div id="question-section">
-        <p id="title-question-section">Frequently Asked Questions</p>
-        <div id="container-questions-section">
-          <div class="question-item">
-            <span>Question #01</span>
-            <i class="lni lni-arrow-down"></i>
-          </div>
-          <div class="question-item">
-            <span>Question #02</span>
-            <i class="lni lni-arrow-down"></i>
-          </div>
-          <div class="question-item">
-            <span>Question #03</span>
-            <i class="lni lni-arrow-down"></i>
-          </div>
-          <div class="question-item">
-            <span>Question #04</span>
-            <i class="lni lni-arrow-down"></i>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div id="footer-col-1">
-        <p class="title-list-footer">PRODUCT</p>
-        <ul class="list-footer">
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-        </ul>
-
-        <p class="title-list-footer highlight-title">Pricing</p>
-        <ul class="list-footer">
-          <li><a href="#">Link #01</a></li>
-        </ul>
-      </div>
-
-      <div id="footer-col-2">
-        <div>
-          <p class="title-list-footer">FREE RESOURCES</p>
-          <ul class="list-footer">
-            <li><a href="#">Link #01</a></li>
-            <li><a href="#">Link #01</a></li>
-            <li><a href="#">Link #01</a></li>
-            <li><a href="#">Link #01</a></li>
+      <div id="cards-plans-section">
+        <div class="card-plan">
+          <p class="title-card-plan">Workflow</p>
+          <p class="price-card-plan"><span><sup>$</sup>19</span> /MONTH</p>
+          <hr />
+          <ul>
+            <li><i class="lni lni-checkmark"></i> Unlimited Clients & Projects</li>
+            <li><i class="lni lni-checkmark"></i> Proposals</li>
+            <li><i class="lni lni-checkmark"></i> Contracts</li>
+            <li><i class="lni lni-checkmark"></i> Invoicing & Payments</li>
+            <li><i class="lni lni-checkmark"></i> Client CRM</li>
+            <li><i class="lni lni-checkmark"></i> Projects Management</li>
+            <li><i class="lni lni-checkmark"></i> Task & Time Tracking</li>
+            <li><i class="lni lni-checkmark"></i> IOS, Android, Chrome & Mac Apps</li>
           </ul>
-
-          <ul class="list-footer">
-            <li><a href="#">Link #01</a></li>
-            <li><a href="#">Link #01</a></li>
-            <li><a href="#">Link #01</a></li>
+          <button>START FREE</button>
+        </div>
+        <div id="popular-card-plan" class="card-plan">
+          <div id="popular-banner">MOST POPULAR</div>
+          <p class="title-card-plan">Workflow plus </p>
+          <p class="price-card-plan"><span><sup>$</sup>19</span> /MONTH</p>
+          <hr />
+          <ul>
+            <li><i class="lni lni-checkmark"></i> Unlimited Clients & Projects</li>
+            <li><i class="lni lni-checkmark"></i> Proposals</li>
+            <li><i class="lni lni-checkmark"></i> Contracts</li>
+            <li><i class="lni lni-checkmark"></i> Invoicing & Payments</li>
+            <li><i class="lni lni-checkmark"></i> Client CRM</li>
+            <li><i class="lni lni-checkmark"></i> Projects Management</li>
+            <li><i class="lni lni-checkmark"></i> Task & Time Tracking</li>
+            <li><i class="lni lni-checkmark"></i> IOS, Android, Chrome & Mac Apps</li>
           </ul>
-
-          <p class="title-list-footer">Templates</p>
-          <ul class="list-footer">
-            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-            <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
-            <li><a href="#">Link #01</a></li>
-            <li><a href="#">Link #01</a></li>
-          </ul>
+          <button>START FREE</button>
         </div>
       </div>
-      <div id="footer-col-3">
-        <p class="title-list-footer">BONSAI</p>
+    </div>
+
+    <!-- --- ADD-ONS SECTION --- -->
+    <div id="addons-section">
+      <div id="addons-title-section">
+        <p>Super charge your work with add-ons</p>
+      </div>
+
+      <div id="addons-cards-section">
+        <div class="addon-card">
+          <p class="subtitle-addon-card">Collaborators</p>
+          <p class="description-addod-card">
+            Invite other users to specific projects for limited access and
+            functionality
+          </p>
+          <p id="free-addon-card">Free</p>
+        </div>
+
+        <div class="addon-card">
+          <p class="subtitle-addon-card">Collaborators</p>
+          <p class="description-addod-card">
+            Invite other users to specific projects for limited access and
+            functionality
+          </p>
+          <div class="container-price-addon-card">
+            <p class="price-addon-card">$9</p>
+            <p class="price-time-addon-card">/MONTH</p>
+          </div>
+        </div>
+
+        <div class="addon-card">
+          <p class="subtitle-addon-card">Collaborators</p>
+          <p class="description-addod-card">
+            Invite other users to specific projects for limited access and
+            functionality
+          </p>
+          <div class="container-price-addon-card">
+            <p class="price-addon-card">$10</p>
+            <p class="price-time-addon-card">/MONTH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- CALL-TO-ACTION SECTION --- -->
+    <div id="cta-section">
+      <p>
+        It's <span>your</span> business. <br />
+        We're here to help it grow.
+      </p>
+      <button>START FREE</button>
+    </div>
+
+    <!-- --- QUESTION SECTION --- -->
+    <div id="question-section">
+      <p id="title-question-section">Frequently Asked Questions</p>
+      <div id="container-questions-section">
+        <div class="question-item">
+          <span>Question #01</span>
+          <i class="lni lni-arrow-down"></i>
+        </div>
+        <div class="question-item">
+          <span>Question #02</span>
+          <i class="lni lni-arrow-down"></i>
+        </div>
+        <div class="question-item">
+          <span>Question #03</span>
+          <i class="lni lni-arrow-down"></i>
+        </div>
+        <div class="question-item">
+          <span>Question #04</span>
+          <i class="lni lni-arrow-down"></i>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footer-col-1">
+      <p class="title-list-footer">PRODUCT</p>
+      <ul class="list-footer">
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+      </ul>
+
+      <p class="title-list-footer highlight-title">Pricing</p>
+      <ul class="list-footer">
+        <li><a href="#">Link #01</a></li>
+      </ul>
+    </div>
+
+    <div id="footer-col-2">
+      <div>
+        <p class="title-list-footer">FREE RESOURCES</p>
         <ul class="list-footer">
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
-          <li><a href="#">Link #01</a></li>
           <li><a href="#">Link #01</a></li>
           <li><a href="#">Link #01</a></li>
           <li><a href="#">Link #01</a></li>
@@ -213,15 +187,47 @@
         <ul class="list-footer">
           <li><a href="#">Link #01</a></li>
           <li><a href="#">Link #01</a></li>
+          <li><a href="#">Link #01</a></li>
         </ul>
 
+        <p class="title-list-footer">Templates</p>
         <ul class="list-footer">
           <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+          <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+          <li><a href="#">Link #01</a></li>
+          <li><a href="#">Link #01</a></li>
         </ul>
       </div>
-    </footer>
-  </body>
-  <script src="myscript.js"></script>
+    </div>
+    <div id="footer-col-3">
+      <p class="title-list-footer">BONSAI</p>
+      <ul class="list-footer">
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+      </ul>
+
+      <ul class="list-footer">
+        <li><a href="#">Link #01</a></li>
+        <li><a href="#">Link #01</a></li>
+      </ul>
+
+      <ul class="list-footer">
+        <li><a href="#">Link #01</a><i class="lni lni-arrow-down"></i></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script src="myscript.js"></script>
+
 </html>
 
 <!-- -- Overlay Padding -- -->

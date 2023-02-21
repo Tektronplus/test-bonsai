@@ -21,6 +21,18 @@ body {
   gap: 75px;
 }
 
+#big-square-background {
+  height: 130vh;
+  width: 130vh;
+  background-color: #f2fbff;
+
+  position: absolute;
+  top: -500px;
+  left: 600px;
+  transform: rotate(60deg);
+
+  z-index: -1;
+}
 /* HEADER */
 header {
   grid-area: header;
@@ -106,21 +118,49 @@ main {
 }
 
 /* -- Toggle -- */
-
-#container-toggle-header{
+#main-contianer-toogle {
   width: 300px;
 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0px 0px 1fr;
+  grid-template-areas: "toogle";
+}
+
+#main-contianer-toogle > span {
+  position: relative;
+  top: -40px;
+  left: 175px;
+
+  font-family: var(--font-family);
+  color: var(--one-color);
+  font-size: small;
+}
+
+#main-contianer-toogle > i {
+  position: relative;
+  top: 90px;
+  left: 145px;
+
+  color: var(--one-color);
+  font-size: 45px;
+
+  transform: rotate(90deg);
+}
+
+  #container-toggle-header {
+  grid-area: toogle;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#container-toggle-header > span{
+#container-toggle-header > span {
   font-family: var(--font-family);
 }
 
-#tag-month-toggle{
+#tag-month-toggle {
   color: var(--black-color);
 }
 
@@ -167,7 +207,7 @@ input:checked + label:after {
   transform: translateX(-100%);
 }
 
-input:checked + #tag-month-toggle{
+input:checked + #tag-month-toggle {
   color: #eb0f0f;
 }
 
@@ -184,7 +224,7 @@ label:active:after {
 }
 
 #title-header-plan {
-  font-family: var(--font-family);
+  font-family: "Times New Roman", Times, serif;
   color: var(--black-color);
   font-size: x-large;
 }
@@ -202,11 +242,59 @@ label:active:after {
 .card-plan {
   height: 450px;
   width: 300px;
-  background-color: aqua;
+  background-color: #ffffff;
   padding: 50px;
+
+  border: 1px solid #d8d8e3;
+  box-shadow: 2px 2px 20px #f3f3fb, -2px -2px 20px #f3f3fb;
+
+  font-family: var(--font-family);
+  color: var(--black-color);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 75px 20px 1fr 40px;
+  grid-template-areas:
+    "title-card"
+    "price-card"
+    "line-card"
+    "list-card"
+    "button-card";
+}
+
+.card-plan > hr {
+  grid-area: line-card;
+  width: 100%;
+  height: 0px;
+  margin: auto;
+  border: 1px solid var(--one-color);
+}
+.card-plan > ul {
+  grid-area: list-card;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+.card-plan > ul > li > i {
+  color: var(--one-color);
+}
+.card-plan > button {
+  grid-area: button-card;
+
+  border: none;
+  background-color: var(--one-color);
+  border-radius: 2px;
+  color: var(--white-color);
+  font-weight: 700;
 }
 
 .title-card-plan {
+  grid-area: title-card;
   font-family: var(--font-family);
 
   font-size: large;
@@ -214,6 +302,7 @@ label:active:after {
 }
 
 .price-card-plan {
+  grid-area: price-card;
   font-family: var(--font-family);
 
   font-size: large;
@@ -223,9 +312,23 @@ label:active:after {
 .price-card-plan > span {
   font-size: xx-large;
 }
+.price-card-plan > span > sup {
+  font-size: x-large;
+}
 
 #popular-card-plan {
   overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0px 50px 75px 20px 1fr 40px;
+  grid-template-areas:
+    "banner-card"
+    "title-card"
+    "price-card"
+    "line-card"
+    "list-card"
+    "button-card";
 }
 #popular-banner {
   height: 30px;
@@ -254,23 +357,20 @@ label:active:after {
 }
 #addons-title-section {
   color: var(--black-color);
-  font-family: var(--font-family);
+  font-family: "Times New Roman", Times, serif;
   font-size: x-large;
 }
 #addons-cards-section {
   width: 100%;
-  background-color: #eb0f0f;
-  padding: 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  gap: 10px;
+  gap: 15px;
 }
 .addon-card {
-  display: block;
   width: 100%;
   padding: 20px;
   background-color: #ffffff;
@@ -281,6 +381,8 @@ label:active:after {
   grid-template-areas:
     "title price"
     "description price";
+
+  box-shadow: 2px 2px 20px #f3f3fb, -2px -2px 20px #f3f3fb;
 }
 .addon-card > p {
   margin: 5;
